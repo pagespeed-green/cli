@@ -1,5 +1,7 @@
 # PageSpeed Green official Command Line Client (CLI)
 
+[![codecov](https://codecov.io/gh/pagespeed-green/cli/branch/master/graph/badge.svg)](https://codecov.io/gh/pagespeed-green/cli)
+
 The CLI is for integration with [PageSpeed Green service](https://pagespeed.green). It can be used for integration with CD/CI pipeline that automatically tracks the code changes for web performance degradations.
 
 Version 1.0.x has two features:
