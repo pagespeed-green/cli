@@ -1,13 +1,13 @@
 {
   "name": "pagespeed-green",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "PageSpeed Green official Command Line Client (CLI)",
   "main": "index.js",
   "bin": {
     "pagespeed-green": "./src/cli.js"
   },
   "scripts": {
-    "start": "node ./src/cli.js",
+    "start": "node ./src/cli.js audit --token=test_token --url=test.com --region=AU-SYD",
     "lint": "eslint --color ./src",
     "lint:fix": "npm run lint -- --fix",
     "test": "mocha \"src/**/*.test.js\"",
@@ -20,7 +20,8 @@
   "keywords": [
     "pagespeed",
     "webperf",
-    "webperformance"
+    "webperformance",
+    "pagespeed-green"
   ],
   "author": "pagespeed.green",
   "license": "ISC",
@@ -29,19 +30,18 @@
   },
   "homepage": "https://github.com/pagespeed-green/cli#readme",
   "engines": {
-    "node": ">=13"
+    "node": ">=10"
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "yargs": "15.1.0"
+    "signale": "^1.4.0",
+    "yargs": "^15.1.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.16.0",
     "mocha": "^7.0.1",
     "nyc": "^15.0.0",
     "sinon": "^9.0.0"

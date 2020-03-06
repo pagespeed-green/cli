@@ -1,0 +1,15 @@
+{
+  "extension": [
+    ".js"
+  ],
+  "excludes": [
+    "./node_modules/**",
+    "*.test.js"
+  ],
+  "reporter": [
+    "text-summary",
+    "json"
+  ],
+  "sourceMap": false,
+  "cache": true
+}
